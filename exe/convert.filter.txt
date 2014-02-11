@@ -1,0 +1,10 @@
+# LogOutput=0
+# オリジナル引数の例
+# -geometry 480x800 -quality 80 org/0001.jpg org/0001_new.jpg
+
+# 原寸の60%にサイズ変更
+-geometry [^ ]+		-geometry 60%
+
+# シャープ化を追加
+-quality [^ ]+		$0 -sharpen 0.3x0.3
+
